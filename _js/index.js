@@ -1,24 +1,18 @@
-const video = document.getElementById("cam")
+const cam = document.getElementById("cam")
 
 Promise.all([
-    faceapi.nets.tinyFaceDetector.loadFromUri("../lib/models"),
-    faceapi.nets.faceLandmark68Net.loadFromUri("../lib/models"),
-    faceapi.nets.tinyFaceDetector.loadFromUri("../lib/models"),
-    faceapi.nets.tinyFaceDetector.loadFromUri("../lib/models"),
-    faceapi.nets.tinyFaceDetector.loadFromUri("../lib/models")
+    faceapi.nets.tnyFaceDetector.loadFromUri("")
 ])
 
 function startVideo() {
-    navigator.getUserMedia(
-        {video: {} },
-        stream => cam.srcObjetct = stream,
+    navigator.getUserMedia (
+        {video: {}},
+        stream => cam.srcObject = stream,
         err => console.log(err)
     )
 }
 
 startVideo()
-
-
 
 
 
