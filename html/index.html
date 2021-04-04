@@ -5,22 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Links Favico: Diversas plataformas
+    <!-- Links Fav-ico: Diversas plataformas
     ------------------------------------------------------------------------->
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/fonts.css">
     <link rel="shortcut icon" href="../imagens/android-chrome-192x192.png" type="image/x-icon">
 
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!--Script do fontawesome
+    ------------------------------------------------------------------------->
+    <script src="https://kit.fontawesome.com/a57965ad4a.js" crossorigin="anonymous"></script>
+
+    <!--Link do css
+    ------------------------------------------------------------------------->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+
     <title>ViTreevian</title>
+    
 </head>
 <body>
     <div class="container">
+
+        <div class="hamburguer">
+            <div class="lines" id="line-a"></div>
+            <div class="lines" id="line-b"></div>
+            <div class="lines" id="line-c"></div>
+        </div>
+
         <header>
             <div class="img-wrapper">
                 <img src="../imagens/background.jpg" alt="forest-background">
@@ -32,6 +47,42 @@
                 <button>Saiba Mais</button>
             </div>
         </header>
+
+        <aside class="sidebar">
+            <nav>
+                <ul class="menu">
+
+                    <li class="menu-item">
+                        <a class="menu-link" href="">Home</a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a class="menu-link" href="#">Conhecimentos</a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a class="menu-link" href="#">Projeto</a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a class="menu-link" href="#">Contato</a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a class="menu-link" href="#">Equipe</a>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <div class="social-media">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </aside>
     </div>
+
+    <script src="../js/script.js"></script>
 </body>
 </html>
